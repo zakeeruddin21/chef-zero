@@ -1,0 +1,342 @@
+E, [2015-10-19T10:18:45.886055 #17459] ERROR -- Kitchen: ------Exception-------
+E, [2015-10-19T10:18:45.886130 #17459] ERROR -- Kitchen: Class: Kitchen::ClientError
+E, [2015-10-19T10:18:45.886149 #17459] ERROR -- Kitchen: Message: Could not load the 'openstack' driver from the load path. Please ensure that your driver is installed as a gem or included in your Gemfile if using Bundler.
+E, [2015-10-19T10:18:45.886162 #17459] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-10-19T10:18:45.886192 #17459] ERROR -- Kitchen: Class: LoadError
+E, [2015-10-19T10:18:45.886204 #17459] ERROR -- Kitchen: Message: cannot load such file -- kitchen/driver/openstack
+E, [2015-10-19T10:18:45.886215 #17459] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-10-19T10:18:45.886225 #17459] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/driver.rb:50:in `rescue in for_plugin'
+E, [2015-10-19T10:18:45.886235 #17459] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/driver.rb:40:in `for_plugin'
+E, [2015-10-19T10:18:45.886245 #17459] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:124:in `new_driver'
+E, [2015-10-19T10:18:45.886276 #17459] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:130:in `new_instance'
+E, [2015-10-19T10:18:45.886287 #17459] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:73:in `block in build_instances'
+E, [2015-10-19T10:18:45.886297 #17459] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `map'
+E, [2015-10-19T10:18:45.886307 #17459] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `with_index'
+E, [2015-10-19T10:18:45.886317 #17459] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `build_instances'
+E, [2015-10-19T10:18:45.886327 #17459] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:52:in `instances'
+E, [2015-10-19T10:18:45.886336 #17459] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:64:in `get_filtered_instances'
+E, [2015-10-19T10:18:45.886346 #17459] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:85:in `parse_subcommand'
+E, [2015-10-19T10:18:45.886356 #17459] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/command/list.rb:31:in `call'
+E, [2015-10-19T10:18:45.886365 #17459] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:47:in `perform'
+E, [2015-10-19T10:18:45.886378 #17459] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:81:in `list'
+E, [2015-10-19T10:18:45.886388 #17459] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2015-10-19T10:18:45.886397 #17459] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2015-10-19T10:18:45.886407 #17459] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:233:in `invoke_task'
+E, [2015-10-19T10:18:45.886417 #17459] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2015-10-19T10:18:45.886426 #17459] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2015-10-19T10:18:45.886443 #17459] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2015-10-19T10:18:45.886455 #17459] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2015-10-19T10:18:45.886464 #17459] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `<top (required)>'
+E, [2015-10-19T10:18:45.886474 #17459] ERROR -- Kitchen: /Users/zakeer/.rvm/gems/ruby-2.2.1/bin/kitchen:23:in `load'
+E, [2015-10-19T10:18:45.886483 #17459] ERROR -- Kitchen: /Users/zakeer/.rvm/gems/ruby-2.2.1/bin/kitchen:23:in `<main>'
+E, [2015-10-19T10:18:45.886495 #17459] ERROR -- Kitchen: /Users/zakeer/.rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `eval'
+E, [2015-10-19T10:18:45.886505 #17459] ERROR -- Kitchen: /Users/zakeer/.rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `<main>'
+E, [2015-10-19T10:18:45.886515 #17459] ERROR -- Kitchen: ----------------------
+E, [2015-10-19T10:19:30.904658 #17512] ERROR -- Kitchen: ------Exception-------
+E, [2015-10-19T10:19:30.904715 #17512] ERROR -- Kitchen: Class: Kitchen::ClientError
+E, [2015-10-19T10:19:30.904732 #17512] ERROR -- Kitchen: Message: Could not load the 'vagrant' driver from the load path. Please ensure that your driver is installed as a gem or included in your Gemfile if using Bundler.
+E, [2015-10-19T10:19:30.904744 #17512] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-10-19T10:19:30.904755 #17512] ERROR -- Kitchen: Class: LoadError
+E, [2015-10-19T10:19:30.904765 #17512] ERROR -- Kitchen: Message: cannot load such file -- kitchen/driver/vagrant
+E, [2015-10-19T10:19:30.904775 #17512] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-10-19T10:19:30.904785 #17512] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/driver.rb:50:in `rescue in for_plugin'
+E, [2015-10-19T10:19:30.904796 #17512] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/driver.rb:40:in `for_plugin'
+E, [2015-10-19T10:19:30.904809 #17512] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:124:in `new_driver'
+E, [2015-10-19T10:19:30.904820 #17512] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:130:in `new_instance'
+E, [2015-10-19T10:19:30.904830 #17512] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:73:in `block in build_instances'
+E, [2015-10-19T10:19:30.904841 #17512] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `map'
+E, [2015-10-19T10:19:30.904851 #17512] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `with_index'
+E, [2015-10-19T10:19:30.904862 #17512] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `build_instances'
+E, [2015-10-19T10:19:30.904872 #17512] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:52:in `instances'
+E, [2015-10-19T10:19:30.904882 #17512] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:64:in `get_filtered_instances'
+E, [2015-10-19T10:19:30.904892 #17512] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:85:in `parse_subcommand'
+E, [2015-10-19T10:19:30.904902 #17512] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/command/list.rb:31:in `call'
+E, [2015-10-19T10:19:30.904912 #17512] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:47:in `perform'
+E, [2015-10-19T10:19:30.904938 #17512] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:81:in `list'
+E, [2015-10-19T10:19:30.904953 #17512] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2015-10-19T10:19:30.904964 #17512] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2015-10-19T10:19:30.904974 #17512] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:233:in `invoke_task'
+E, [2015-10-19T10:19:30.904984 #17512] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2015-10-19T10:19:30.904994 #17512] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2015-10-19T10:19:30.905004 #17512] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2015-10-19T10:19:30.905014 #17512] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2015-10-19T10:19:30.905024 #17512] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `<top (required)>'
+E, [2015-10-19T10:19:30.905033 #17512] ERROR -- Kitchen: /Users/zakeer/.rvm/gems/ruby-2.2.1/bin/kitchen:23:in `load'
+E, [2015-10-19T10:19:30.905043 #17512] ERROR -- Kitchen: /Users/zakeer/.rvm/gems/ruby-2.2.1/bin/kitchen:23:in `<main>'
+E, [2015-10-19T10:19:30.905052 #17512] ERROR -- Kitchen: /Users/zakeer/.rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `eval'
+E, [2015-10-19T10:19:30.905064 #17512] ERROR -- Kitchen: /Users/zakeer/.rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `<main>'
+E, [2015-10-19T10:19:30.905075 #17512] ERROR -- Kitchen: ----------------------
+E, [2015-10-19T10:21:43.505598 #17750] ERROR -- Kitchen: ------Exception-------
+E, [2015-10-19T10:21:43.505663 #17750] ERROR -- Kitchen: Class: Kitchen::ClientError
+E, [2015-10-19T10:21:43.505680 #17750] ERROR -- Kitchen: Message: Could not load the 'openstack' driver from the load path. Please ensure that your driver is installed as a gem or included in your Gemfile if using Bundler.
+E, [2015-10-19T10:21:43.505693 #17750] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-10-19T10:21:43.505714 #17750] ERROR -- Kitchen: Class: LoadError
+E, [2015-10-19T10:21:43.505725 #17750] ERROR -- Kitchen: Message: cannot load such file -- kitchen/driver/openstack
+E, [2015-10-19T10:21:43.505744 #17750] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-10-19T10:21:43.505754 #17750] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/driver.rb:50:in `rescue in for_plugin'
+E, [2015-10-19T10:21:43.505764 #17750] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/driver.rb:40:in `for_plugin'
+E, [2015-10-19T10:21:43.505774 #17750] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:124:in `new_driver'
+E, [2015-10-19T10:21:43.505784 #17750] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:130:in `new_instance'
+E, [2015-10-19T10:21:43.505797 #17750] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:73:in `block in build_instances'
+E, [2015-10-19T10:21:43.505807 #17750] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `map'
+E, [2015-10-19T10:21:43.505833 #17750] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `with_index'
+E, [2015-10-19T10:21:43.505845 #17750] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `build_instances'
+E, [2015-10-19T10:21:43.505855 #17750] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:52:in `instances'
+E, [2015-10-19T10:21:43.505865 #17750] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:64:in `get_filtered_instances'
+E, [2015-10-19T10:21:43.505898 #17750] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:85:in `parse_subcommand'
+E, [2015-10-19T10:21:43.505912 #17750] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/command/list.rb:31:in `call'
+E, [2015-10-19T10:21:43.505923 #17750] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:47:in `perform'
+E, [2015-10-19T10:21:43.505934 #17750] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:81:in `list'
+E, [2015-10-19T10:21:43.505944 #17750] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2015-10-19T10:21:43.505955 #17750] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2015-10-19T10:21:43.505965 #17750] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:233:in `invoke_task'
+E, [2015-10-19T10:21:43.505976 #17750] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2015-10-19T10:21:43.505986 #17750] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2015-10-19T10:21:43.505996 #17750] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2015-10-19T10:21:43.506007 #17750] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2015-10-19T10:21:43.506017 #17750] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `<top (required)>'
+E, [2015-10-19T10:21:43.506027 #17750] ERROR -- Kitchen: /Users/zakeer/.rvm/gems/ruby-2.2.1/bin/kitchen:23:in `load'
+E, [2015-10-19T10:21:43.506037 #17750] ERROR -- Kitchen: /Users/zakeer/.rvm/gems/ruby-2.2.1/bin/kitchen:23:in `<main>'
+E, [2015-10-19T10:21:43.506046 #17750] ERROR -- Kitchen: /Users/zakeer/.rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `eval'
+E, [2015-10-19T10:21:43.506058 #17750] ERROR -- Kitchen: /Users/zakeer/.rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `<main>'
+E, [2015-10-19T10:21:43.506069 #17750] ERROR -- Kitchen: ----------------------
+E, [2015-10-19T10:22:37.843464 #17874] ERROR -- Kitchen: ------Exception-------
+E, [2015-10-19T10:22:37.843518 #17874] ERROR -- Kitchen: Class: Kitchen::ClientError
+E, [2015-10-19T10:22:37.843533 #17874] ERROR -- Kitchen: Message: Could not load the 'openstack' driver from the load path. Please ensure that your driver is installed as a gem or included in your Gemfile if using Bundler.
+E, [2015-10-19T10:22:37.843555 #17874] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-10-19T10:22:37.843565 #17874] ERROR -- Kitchen: Class: LoadError
+E, [2015-10-19T10:22:37.843574 #17874] ERROR -- Kitchen: Message: cannot load such file -- kitchen/driver/openstack
+E, [2015-10-19T10:22:37.843612 #17874] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-10-19T10:22:37.843624 #17874] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/driver.rb:50:in `rescue in for_plugin'
+E, [2015-10-19T10:22:37.843643 #17874] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/driver.rb:40:in `for_plugin'
+E, [2015-10-19T10:22:37.843653 #17874] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:124:in `new_driver'
+E, [2015-10-19T10:22:37.843662 #17874] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:130:in `new_instance'
+E, [2015-10-19T10:22:37.843674 #17874] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:73:in `block in build_instances'
+E, [2015-10-19T10:22:37.843684 #17874] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `map'
+E, [2015-10-19T10:22:37.843693 #17874] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `with_index'
+E, [2015-10-19T10:22:37.843702 #17874] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `build_instances'
+E, [2015-10-19T10:22:37.843711 #17874] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:52:in `instances'
+E, [2015-10-19T10:22:37.843720 #17874] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:64:in `get_filtered_instances'
+E, [2015-10-19T10:22:37.843729 #17874] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:85:in `parse_subcommand'
+E, [2015-10-19T10:22:37.843739 #17874] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/command/list.rb:31:in `call'
+E, [2015-10-19T10:22:37.843748 #17874] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:47:in `perform'
+E, [2015-10-19T10:22:37.843757 #17874] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:81:in `list'
+E, [2015-10-19T10:22:37.843768 #17874] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2015-10-19T10:22:37.843777 #17874] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2015-10-19T10:22:37.843786 #17874] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:233:in `invoke_task'
+E, [2015-10-19T10:22:37.843795 #17874] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2015-10-19T10:22:37.843804 #17874] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2015-10-19T10:22:37.843813 #17874] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2015-10-19T10:22:37.843823 #17874] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2015-10-19T10:22:37.843854 #17874] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `<top (required)>'
+E, [2015-10-19T10:22:37.843868 #17874] ERROR -- Kitchen: /Users/zakeer/.rvm/gems/ruby-2.2.1/bin/kitchen:23:in `load'
+E, [2015-10-19T10:22:37.843883 #17874] ERROR -- Kitchen: /Users/zakeer/.rvm/gems/ruby-2.2.1/bin/kitchen:23:in `<main>'
+E, [2015-10-19T10:22:37.843893 #17874] ERROR -- Kitchen: /Users/zakeer/.rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `eval'
+E, [2015-10-19T10:22:37.843903 #17874] ERROR -- Kitchen: /Users/zakeer/.rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `<main>'
+E, [2015-10-19T10:22:37.843912 #17874] ERROR -- Kitchen: ----------------------
+E, [2015-10-19T10:23:19.018650 #17926] ERROR -- Kitchen: ------Exception-------
+E, [2015-10-19T10:23:19.018718 #17926] ERROR -- Kitchen: Class: Kitchen::ClientError
+E, [2015-10-19T10:23:19.018735 #17926] ERROR -- Kitchen: Message: Could not load the 'openstack' driver from the load path. Please ensure that your driver is installed as a gem or included in your Gemfile if using Bundler.
+E, [2015-10-19T10:23:19.018748 #17926] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-10-19T10:23:19.018759 #17926] ERROR -- Kitchen: Class: LoadError
+E, [2015-10-19T10:23:19.018770 #17926] ERROR -- Kitchen: Message: cannot load such file -- kitchen/driver/openstack
+E, [2015-10-19T10:23:19.018792 #17926] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-10-19T10:23:19.018802 #17926] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/driver.rb:50:in `rescue in for_plugin'
+E, [2015-10-19T10:23:19.018812 #17926] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/driver.rb:40:in `for_plugin'
+E, [2015-10-19T10:23:19.018823 #17926] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:124:in `new_driver'
+E, [2015-10-19T10:23:19.018833 #17926] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:130:in `new_instance'
+E, [2015-10-19T10:23:19.018843 #17926] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:73:in `block in build_instances'
+E, [2015-10-19T10:23:19.018853 #17926] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `map'
+E, [2015-10-19T10:23:19.018866 #17926] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `with_index'
+E, [2015-10-19T10:23:19.018876 #17926] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `build_instances'
+E, [2015-10-19T10:23:19.018887 #17926] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:52:in `instances'
+E, [2015-10-19T10:23:19.018896 #17926] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:64:in `get_filtered_instances'
+E, [2015-10-19T10:23:19.018907 #17926] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:85:in `parse_subcommand'
+E, [2015-10-19T10:23:19.018916 #17926] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/command/list.rb:31:in `call'
+E, [2015-10-19T10:23:19.018926 #17926] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:47:in `perform'
+E, [2015-10-19T10:23:19.018936 #17926] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:81:in `list'
+E, [2015-10-19T10:23:19.018946 #17926] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2015-10-19T10:23:19.018956 #17926] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2015-10-19T10:23:19.018982 #17926] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:233:in `invoke_task'
+E, [2015-10-19T10:23:19.019004 #17926] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2015-10-19T10:23:19.019014 #17926] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2015-10-19T10:23:19.019024 #17926] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2015-10-19T10:23:19.019034 #17926] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2015-10-19T10:23:19.019043 #17926] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/bin/kitchen:13:in `<top (required)>'
+E, [2015-10-19T10:23:19.019053 #17926] ERROR -- Kitchen: /Users/zakeer/.rvm/gems/ruby-2.2.1/bin/kitchen:23:in `load'
+E, [2015-10-19T10:23:19.019062 #17926] ERROR -- Kitchen: /Users/zakeer/.rvm/gems/ruby-2.2.1/bin/kitchen:23:in `<main>'
+E, [2015-10-19T10:23:19.019071 #17926] ERROR -- Kitchen: /Users/zakeer/.rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `eval'
+E, [2015-10-19T10:23:19.019081 #17926] ERROR -- Kitchen: /Users/zakeer/.rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `<main>'
+E, [2015-10-19T10:23:19.019090 #17926] ERROR -- Kitchen: ----------------------
+I, [2015-10-19T10:23:45.135630 #17997]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2015-10-19T10:23:45.588051 #17997]  INFO -- Kitchen: -----> Creating <default-redhat>...
+I, [2015-10-19T10:24:45.006910 #17997]  INFO -- Kitchen: -----> Kitchen is finished. (0m59.87s)
+I, [2015-10-19T10:25:58.665024 #18088]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2015-10-19T10:25:59.127677 #18088]  INFO -- Kitchen: -----> Converging <default-redhat>...
+I, [2015-10-19T10:27:24.634689 #18088]  INFO -- Kitchen: -----> Setting up <default-redhat>...
+I, [2015-10-19T10:27:24.636132 #18088]  INFO -- Kitchen: -----> Kitchen is finished. (1m25.98s)
+I, [2015-10-19T10:43:10.577355 #18275]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2015-10-19T10:43:11.036871 #18275]  INFO -- Kitchen: -----> Destroying <default-redhat>...
+I, [2015-10-19T10:43:15.120170 #18275]  INFO -- Kitchen: -----> Kitchen is finished. (0m4.54s)
+I, [2015-10-19T10:45:37.338920 #18370]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2015-10-19T10:45:37.796815 #18370]  INFO -- Kitchen: -----> Creating <default-redhat>...
+I, [2015-10-19T10:46:37.023892 #18370]  INFO -- Kitchen: -----> Kitchen is finished. (0m59.69s)
+I, [2015-10-19T10:47:03.818665 #18474]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2015-10-19T10:47:04.284668 #18474]  INFO -- Kitchen: -----> Converging <default-redhat>...
+I, [2015-10-19T10:48:29.302571 #18474]  INFO -- Kitchen: -----> Setting up <default-redhat>...
+I, [2015-10-19T10:48:29.304278 #18474]  INFO -- Kitchen: -----> Kitchen is finished. (1m25.49s)
+I, [2015-10-19T10:48:51.344211 #18505]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2015-10-19T10:48:51.810411 #18505]  INFO -- Kitchen: -----> Converging <default-redhat>...
+E, [2015-10-19T10:48:55.308182 #18505] ERROR -- Kitchen: Converge failed on instance <default-redhat>.
+I, [2015-10-19T10:49:28.106848 #18532]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2015-10-19T10:49:28.589779 #18532]  INFO -- Kitchen: -----> Converging <default-redhat>...
+E, [2015-10-19T10:49:32.218735 #18532] ERROR -- Kitchen: Converge failed on instance <default-redhat>.
+I, [2015-10-19T10:49:37.594026 #18546]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+E, [2015-10-19T10:49:38.062403 #18546] ERROR -- Kitchen: 
+No instances for regex `--help', try running `kitchen list'
+
+
+I, [2015-10-19T11:10:07.536245 #19017]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2015-10-19T11:10:08.008005 #19017]  INFO -- Kitchen: -----> Destroying <default-redhat>...
+I, [2015-10-19T11:10:12.401111 #19017]  INFO -- Kitchen: -----> Kitchen is finished. (0m4.86s)
+I, [2015-10-19T11:10:50.571438 #19114]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2015-10-19T11:10:51.024262 #19114]  INFO -- Kitchen: -----> Creating <default-centos>...
+E, [2015-10-19T11:10:54.023875 #19114] ERROR -- Kitchen: ------Exception-------
+E, [2015-10-19T11:10:54.023935 #19114] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-10-19T11:10:54.023968 #19114] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Box 'opscode-centos' could not be found. Attempting to find and install...
+    default: Box Provider: virtualbox
+    default: Box Version: >= 0
+==> default: Box file was not detected as metadata. Adding it directly...
+==> default: Adding box 'opscode-centos' (v0) for provider: virtualbox
+    default: Downloading: https://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos_chef-provisionerless.box
+[K
+STDERR: An error occurred while downloading the remote file. The error
+message, if any, is reproduced below. Please fix this error and try
+again.
+
+The requested URL returned error: 404 Not Found
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1]
+E, [2015-10-19T11:10:54.024002 #19114] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-10-19T11:10:54.024024 #19114] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2015-10-19T11:10:54.024048 #19114] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Box 'opscode-centos' could not be found. Attempting to find and install...
+    default: Box Provider: virtualbox
+    default: Box Version: >= 0
+==> default: Box file was not detected as metadata. Adding it directly...
+==> default: Adding box 'opscode-centos' (v0) for provider: virtualbox
+    default: Downloading: https://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos_chef-provisionerless.box
+[K
+STDERR: An error occurred while downloading the remote file. The error
+message, if any, is reproduced below. Please fix this error and try
+again.
+
+The requested URL returned error: 404 Not Found
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1
+E, [2015-10-19T11:10:54.024076 #19114] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-10-19T11:10:54.024100 #19114] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/shell_out.rb:70:in `rescue in run_command'
+E, [2015-10-19T11:10:54.024125 #19114] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2015-10-19T11:10:54.024151 #19114] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:158:in `run_command'
+E, [2015-10-19T11:10:54.024177 #19114] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:123:in `run'
+E, [2015-10-19T11:10:54.024202 #19114] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:68:in `create'
+E, [2015-10-19T11:10:54.024230 #19114] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2015-10-19T11:10:54.024255 #19114] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2015-10-19T11:10:54.024300 #19114] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:305:in `call'
+E, [2015-10-19T11:10:54.024329 #19114] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:305:in `block in synchronize_or_call'
+E, [2015-10-19T11:10:54.024353 #19114] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:303:in `synchronize'
+E, [2015-10-19T11:10:54.024375 #19114] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:303:in `synchronize_or_call'
+E, [2015-10-19T11:10:54.024400 #19114] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2015-10-19T11:10:54.024424 #19114] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:288:in `measure'
+E, [2015-10-19T11:10:54.024448 #19114] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
+E, [2015-10-19T11:10:54.024475 #19114] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2015-10-19T11:10:54.024499 #19114] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:252:in `create_action'
+E, [2015-10-19T11:10:54.024523 #19114] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2015-10-19T11:10:54.024547 #19114] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
+E, [2015-10-19T11:10:54.024568 #19114] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2015-10-19T11:10:54.024592 #19114] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:108:in `create'
+E, [2015-10-19T11:10:54.024614 #19114] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
+E, [2015-10-19T11:10:54.024634 #19114] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
+E, [2015-10-19T11:10:54.024756 #19114] ERROR -- Kitchen: ----------------------
+I, [2015-10-19T11:12:30.996431 #19191]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2015-10-19T11:12:31.452945 #19191]  INFO -- Kitchen: -----> Creating <default-centos>...
+E, [2015-10-19T11:12:34.391789 #19191] ERROR -- Kitchen: ------Exception-------
+E, [2015-10-19T11:12:34.391851 #19191] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-10-19T11:12:34.391877 #19191] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Box 'opscode-centos' could not be found. Attempting to find and install...
+    default: Box Provider: virtualbox
+    default: Box Version: >= 0
+==> default: Box file was not detected as metadata. Adding it directly...
+==> default: Adding box 'opscode-centos' (v0) for provider: virtualbox
+    default: Downloading: https://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos_chef-provisionerless.box
+[K    default: Progress: 0% (Rate: 0/s, Estimated time remaining: --:--:--)[K
+STDERR: An error occurred while downloading the remote file. The error
+message, if any, is reproduced below. Please fix this error and try
+again.
+
+The requested URL returned error: 404 Not Found
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1]
+E, [2015-10-19T11:12:34.391921 #19191] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-10-19T11:12:34.391945 #19191] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2015-10-19T11:12:34.391966 #19191] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Box 'opscode-centos' could not be found. Attempting to find and install...
+    default: Box Provider: virtualbox
+    default: Box Version: >= 0
+==> default: Box file was not detected as metadata. Adding it directly...
+==> default: Adding box 'opscode-centos' (v0) for provider: virtualbox
+    default: Downloading: https://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos_chef-provisionerless.box
+[K    default: Progress: 0% (Rate: 0/s, Estimated time remaining: --:--:--)[K
+STDERR: An error occurred while downloading the remote file. The error
+message, if any, is reproduced below. Please fix this error and try
+again.
+
+The requested URL returned error: 404 Not Found
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1
+E, [2015-10-19T11:12:34.391987 #19191] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-10-19T11:12:34.392006 #19191] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/shell_out.rb:70:in `rescue in run_command'
+E, [2015-10-19T11:12:34.392032 #19191] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2015-10-19T11:12:34.392052 #19191] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/driver/base.rb:158:in `run_command'
+E, [2015-10-19T11:12:34.392071 #19191] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:123:in `run'
+E, [2015-10-19T11:12:34.392093 #19191] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:68:in `create'
+E, [2015-10-19T11:12:34.392116 #19191] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `public_send'
+E, [2015-10-19T11:12:34.392141 #19191] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2015-10-19T11:12:34.392161 #19191] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:305:in `call'
+E, [2015-10-19T11:12:34.392182 #19191] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:305:in `block in synchronize_or_call'
+E, [2015-10-19T11:12:34.392204 #19191] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:303:in `synchronize'
+E, [2015-10-19T11:12:34.392224 #19191] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:303:in `synchronize_or_call'
+E, [2015-10-19T11:12:34.392243 #19191] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:283:in `block in action'
+E, [2015-10-19T11:12:34.392262 #19191] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:288:in `measure'
+E, [2015-10-19T11:12:34.392375 #19191] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:282:in `action'
+E, [2015-10-19T11:12:34.392407 #19191] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2015-10-19T11:12:34.392429 #19191] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:252:in `create_action'
+E, [2015-10-19T11:12:34.392449 #19191] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2015-10-19T11:12:34.392468 #19191] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `each'
+E, [2015-10-19T11:12:34.392491 #19191] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2015-10-19T11:12:34.392510 #19191] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:108:in `create'
+E, [2015-10-19T11:12:34.392529 #19191] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `public_send'
+E, [2015-10-19T11:12:34.392548 #19191] ERROR -- Kitchen: /Users/zakeer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
+E, [2015-10-19T11:12:34.392567 #19191] ERROR -- Kitchen: ----------------------
+I, [2015-10-19T11:14:48.783412 #19375]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2015-10-19T11:14:49.248109 #19375]  INFO -- Kitchen: -----> Creating <default-centos>...
+I, [2015-10-19T11:15:24.539914 #19375]  INFO -- Kitchen: -----> Kitchen is finished. (0m35.76s)
+I, [2015-10-19T11:15:35.763102 #19473]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2015-10-19T11:15:36.224202 #19473]  INFO -- Kitchen: -----> Converging <default-centos>...
+E, [2015-10-19T11:16:50.750906 #19473] ERROR -- Kitchen: Converge failed on instance <default-centos>.
+I, [2015-10-19T11:17:33.190091 #19525]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2015-10-19T11:17:33.680101 #19525]  INFO -- Kitchen: -----> Converging <default-centos>...
+E, [2015-10-19T11:17:35.973173 #19525] ERROR -- Kitchen: Converge failed on instance <default-centos>.
+I, [2015-10-19T11:17:47.804627 #19555]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2015-10-19T11:17:48.277843 #19555]  INFO -- Kitchen: -----> Converging <default-centos>...
+I, [2015-10-19T11:17:50.648960 #19555]  INFO -- Kitchen: -----> Setting up <default-centos>...
+I, [2015-10-19T11:17:50.650511 #19555]  INFO -- Kitchen: -----> Kitchen is finished. (0m2.85s)
